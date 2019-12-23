@@ -622,7 +622,7 @@ sent as one blob at the beginning. Therefore a new type is used as well
 */
 void ESPUIClass::jsonDom(AsyncWebSocketClient *client) {
   String json;
-  DynamicJsonDocument document(4000);
+  DynamicJsonDocument document(8000);
   document["type"] = (int)UI_INITIAL_GUI;
   JsonArray items = document.createNestedArray("controls");
 
